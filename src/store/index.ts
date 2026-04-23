@@ -1,6 +1,6 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import type { IBoardState, ITask, IColumn } from '../types';
+import type { IBoardState, ITask} from '../types';
 import { v4 as uuidv4 } from 'uuid';
 
 const initialState: IBoardState = JSON.parse(localStorage.getItem('kanban-state') || 'null') || {
